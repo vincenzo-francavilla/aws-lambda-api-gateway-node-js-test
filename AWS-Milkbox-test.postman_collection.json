@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "452bf0be-3b7e-4ea2-bb9a-6d9843c61f78",
+		"name": "AWS-Milkbox-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get specific task Id ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4n0skeo4k8.execute-api.eu-central-1.amazonaws.com/stage/api/Task/a54bb20d-9e41-4ca1-b91f-d4568d20ab1d",
+					"protocol": "https",
+					"host": [
+						"4n0skeo4k8",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"stage",
+						"api",
+						"Task",
+						"a54bb20d-9e41-4ca1-b91f-d4568d20ab1d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://4n0skeo4k8.execute-api.eu-central-1.amazonaws.com/stage/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"4n0skeo4k8",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"stage",
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"taskDescription\": \"This is a second test\",\n    \"taskPriority\": 2,\n    \"taskName\": \"Task 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://4n0skeo4k8.execute-api.eu-central-1.amazonaws.com/stage/api/Create",
+					"protocol": "https",
+					"host": [
+						"4n0skeo4k8",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"stage",
+						"api",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://4n0skeo4k8.execute-api.eu-central-1.amazonaws.com/stage/api/Delete/977fd2cd-0771-47ef-a242-d9859e98da60",
+					"protocol": "https",
+					"host": [
+						"4n0skeo4k8",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"stage",
+						"api",
+						"Delete",
+						"977fd2cd-0771-47ef-a242-d9859e98da60"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://4n0skeo4k8.execute-api.eu-central-1.amazonaws.com/stage/api/Update/a54bb20d-9e41-4ca1-b91f-d4568d20ab1d",
+					"protocol": "https",
+					"host": [
+						"4n0skeo4k8",
+						"execute-api",
+						"eu-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"stage",
+						"api",
+						"Update",
+						"a54bb20d-9e41-4ca1-b91f-d4568d20ab1d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
