@@ -18,6 +18,7 @@ exports.handler = async (event, context, callback) => {
 
     }).catch(error => {
         console.log(error);
+        callback(error);
     });
 
 };
